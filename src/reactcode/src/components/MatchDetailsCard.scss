@@ -1,0 +1,50 @@
+.MatchDetailCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #545454;
+    position: relative;
+
+    .match-data{
+        z-index: 1000;
+    }
+    .match-date, .match-venue, .match-result {
+        margin-top: 10px;
+    }
+    .additional-detail {
+        text-align: right;
+        z-index: 1000;
+        & > p {
+            margin-bottom: 20px;;
+        }
+
+    }
+
+}
+
+.won-card{
+    background-color: #4f93578c;
+}
+.lost-card{
+    background-color: #ffadad61;
+}
+.won-card::after{
+    content: "WON";
+    height: 100%;
+    width: 100%;
+    color: #5dff8391;
+    font-size: 15rem;
+    position: absolute;
+    text-align: center;
+}
+.lost-card::after{
+    content: "LOST";
+    height: 100%;
+    width: 100%;
+    color: #ff7979ba;
+    font-size: 15rem;
+    position: absolute;
+    text-align: center;
+}
+

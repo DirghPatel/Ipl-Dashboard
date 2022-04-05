@@ -1,0 +1,42 @@
+.MatchSmallCard {
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .match-result {
+        margin-top: 10px;
+    }
+
+    .team-small-name{
+        font-size: 3rem;
+    }
+    .team-small-inner{
+        z-index: 100;
+    }
+}
+
+.won-small-card{
+    background-color: #4f93578c;
+}
+.lost-small-card{
+    background-color: #ffadad61;
+}
+.won-small-card::after{
+    content: "WON";
+    color: #5dff8347;
+    font-size: 7rem;
+    text-align: center;
+    position: absolute;
+}
+.lost-small-card::after{
+    content: "LOST";
+    color: #ff79796e;
+    font-size: 7rem;
+    text-align: center;
+    position: absolute;
+}
